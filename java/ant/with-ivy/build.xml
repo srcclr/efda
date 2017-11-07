@@ -1,0 +1,78 @@
+<project name="efda-ant-with-ivy-example" default="build" xmlns:ivy="antlib:org.apache.ivy.ant">
+    <!-- some variables used -->
+    <property name="lib.dir" value="lib" />
+    <property name="build.dir" value="target" />
+    <property name="src.dir" value="src/main/java/org/continuous_security" />
+
+    <!-- paths used for compilation and run  -->
+    <path id="lib.path.id">
+        <fileset dir="${lib.dir}" />
+	</path>
+    <path id="run.path.id">
+        <path refid="lib.path.id" />
+        <path location="${build.dir}" />
+    </path>
+
+    <!-- =================================
+          target: resolve
+         ================================= -->
+    <target name="resolve" description="--> retrieve dependencies with ivy">
+        <ivy:retrieve/>
+    </target>
+
+    <!-- =================================
+          target: report
+         ================================= -->
+    <target name="report" depends="resolve" description="--> generates a report of dependencies">
+        <ivy:report todir="${build.dir}"/>
+    </target>
+
+    <!-- =================================
+          target: build
+         ================================= -->
+    <target name="build" depends="resolve" description="--> compile the project">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="lib.path.id" includeAntRuntime="false"/>
+    </target>
+
+    <!-- =================================
+          target: run
+         ================================= -->
+    <target name="run" depends="build" description="--> run the project">
+        <java classpathref="run.path.id" classname="org.continuous_security.Main">
+        	<arg value="FirstAndOnlyArg"/>
+    	</java>
+    </target>
+
+    <!-- =================================
+          target: clean
+         ================================= -->
+    <target name="clean" description="--> clean the project">
+        <delete includeemptydirs="true">
+            <fileset dir="${build.dir}"></fileset>
+    	</delete>
+    </target>
+
+    <!-- =================================
+          target: clean-lib
+         ================================= -->
+    <target name="clean-lib"
+        description="--> clean the lib directory. If other projects are saving dependencies into this directory, those dependencies will be deleted too.">
+        <delete includeemptydirs="true">
+            <fileset dir="${lib.dir}"></fileset>
+    	</delete>
+    </target>
+
+    <!-- =================================
+          target: clean-all
+         ================================= -->
+    <target name="clean-all" depends="clean,clean-lib" description="--> clean the build and lib directory.">
+    </target>
+
+    <!-- =================================
+          target: clean-cache
+         ================================= -->
+	<target name="clean-cache" description="--> clean the ivy cache">
+		<ivy:cleancache />
+	</target>
+</project>

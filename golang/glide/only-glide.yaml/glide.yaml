@@ -1,0 +1,10 @@
+package: github.com/continuous-security/efda/golang/glide/only-glide.yaml
+import:
+- package: github.com/google/go-github
+  subpackages:
+  - github
+- package: github.com/google/go-querystring
+  subpackages:
+  - query
+- package: github.com/square/go-jose
+  version: 7f0dd807d3f3d73bb536898cb7980ddf638ce69a

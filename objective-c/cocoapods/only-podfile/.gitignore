@@ -1,0 +1,4 @@
+Pods/
+# ignored deliberately to test scanning without lock file
+Podfile.lock
+only-podfile.xcworkspace/

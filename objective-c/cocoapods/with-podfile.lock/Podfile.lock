@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.3.0)
+  - HockeyKit (2.0.7)
+  - OpenSSL-Static (1.0.2.c1)
+  - ReactiveCocoa (5.0.0-rc.1):
+    - ReactiveSwift (~> 1.0.0-rc.3)
+  - ReactiveSwift (1.0.0):
+    - Result (~> 3.1)
+  - Result (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - HockeyKit
+  - OpenSSL-Static (= 1.0.2.c1)
+  - ReactiveCocoa (= 5.0.0-rc.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  HockeyKit: 50c665e93ffec19f784de76563b9f4aecf467ae8
+  OpenSSL-Static: bd17e34564a8591ad76b740318683a6caa19a13e
+  ReactiveCocoa: 3e9cad4b77fa199d41e03f603cb55d0701ad6ad8
+  ReactiveSwift: f391724ee318a2cfd3e37dfb041cd49ecf4e7869
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+
+PODFILE CHECKSUM: c920e9e5bfe067641b826fa45fbbba42f53e2045
+
+COCOAPODS: 1.2.0

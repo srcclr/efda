@@ -1,0 +1,11 @@
+{
+    "name": "edfa-composer-scopes-exmaple",
+    "description": "An example project to test dependency analysis tools with different dependencies specified in composer composer.json.",
+    "type": "project",
+    "require": {
+      "drupal/core": "8.3.6"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "5.0.10"
+    }
+}

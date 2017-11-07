@@ -1,0 +1,10 @@
+{
+  "name": "efda-bower-json",
+  "version": "0.0.1",
+  "dependencies": {
+    "dojo": "1.3.0",
+    "validator-js": "<=1.0.0",
+    "mapbox.js": "^1.5.0 <=1.6.4",
+    "ember": "1.2.0"
+  }
+}

@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'org.continuous_security'
+version = '1.0'
+
+mainClassName = "org.continuous_security.Main"
+
+repositories {
+
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'org.apache.sling', name: 'org.apache.sling.engine', version:'2.0.4-incubator'
+    compile group: 'org.apache.kafka', name: 'kafka_2.11', version:'0.9.0.1'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}

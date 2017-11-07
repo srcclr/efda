@@ -1,0 +1,15 @@
+{
+  "name": "efda-npm-with-dev-dependencies",
+  "version": "0.0.1",
+  "private": true,
+  "author": "continuous-security <contact@continuous-security.org>",
+  "description": "An example project to test dependency analysis tools with different dependencies specified in npm package.json.",
+  "dependencies": {
+    "jquery": "3.0.0-alpha1",
+    "express": "4.1.1",
+    "angular": "1.3.19"
+  },
+  "devDependencies": {
+      "coffee-script": "~1.6.3"
+  }
+}

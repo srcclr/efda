@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.continuous_security</groupId>
+  <artifactId>efda-maven-interpolated-variables</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <jbcrypt.group>org.mindrot</jbcrypt.group>
+    <jbcrypt.version>0.3m</jbcrypt.version>
+    <sling.engine>org.apache.sling.engine</sling.engine>
+    <sling.engine.group>org.apache.sling</sling.engine.group>
+    <sling.engine.version>2.0.4-incubator</sling.engine.version>
+  </properties>
+
+  <!-- Using aggregation so we do not necessarily have to call
+  mvn in the child-module directory to compile. -->
+  <modules>
+    <module>child-module</module>
+  </modules>
+</project>

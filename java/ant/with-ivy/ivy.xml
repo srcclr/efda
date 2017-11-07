@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+    <info organisation="org.continuous_security" module="efda-ant-with-ivy-example" revision="0.0.1"/>
+    <dependencies>
+        <dependency org="org.mindrot" name="jbcrypt" rev="0.3m"/>
+        <dependency org="org.apache.kafka" name="kafka_2.11" rev="0.9.0.1"/>
+    </dependencies>
+</ivy-module>
