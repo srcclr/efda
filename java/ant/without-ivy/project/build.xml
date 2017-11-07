@@ -1,0 +1,42 @@
+<project name="efda-ant-without-ivy-example" default="build">
+    <!-- some variables used -->
+    <property name="lib.dir" value="${basedir}/../lib" />
+    <property name="build.dir" value="target" />
+    <property name="src.dir" value="src/main/java/org/continuous_security" />
+
+    <!-- paths used for compilation and run  -->
+    <path id="lib.path.id">
+        <fileset dir="${lib.dir}" />
+	</path>
+    <path id="run.path.id">
+        <path refid="lib.path.id" />
+        <path location="${build.dir}" />
+    </path>
+
+    <!-- =================================
+          target: build
+         ================================= -->
+    <target name="build" description="--> compile the project">
+        <mkdir dir="${build.dir}" />
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="lib.path.id" includeAntRuntime="false"/>
+    </target>
+
+    <!-- =================================
+          target: run
+         ================================= -->
+    <target name="run" depends="build" description="--> run the project">
+        <java classpathref="run.path.id" classname="org.continuous_security.Main">
+        	<arg value="FirstAndOnlyArg"/>
+    	</java>
+    </target>
+
+    <!-- =================================
+          target: clean
+         ================================= -->
+    <target name="clean" description="--> clean the project">
+        <delete includeemptydirs="true">
+            <fileset dir="${build.dir}"></fileset>
+    	</delete>
+    </target>
+
+</project>

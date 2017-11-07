@@ -1,0 +1,24 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'org.continuous_security'
+  version = '1.0'
+}
+
+subprojects {
+  apply plugin: 'java'
+
+  repositories {
+    mavenLocal()
+
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
+
+  dependencies {
+    compile group: 'org.apache.sling', name: 'org.apache.sling.engine', version:'2.0.4-incubator'
+    compile group: 'org.mindrot', name: 'jbcrypt', version:'0.3m'
+  }
+
+
+}

@@ -1,0 +1,6 @@
+# the binary built
+only-glide.yaml
+# not checked in deliberately to test scanning with only glide.yaml
+vendor/
+glide.lock
+

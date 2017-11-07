@@ -1,0 +1,6 @@
+rootProject.name = 'efda-gradle-multi-module-example'
+include ':multi-module-submodule-1'
+include ':multi-module-submodule-2'
+
+project(':multi-module-submodule-1').projectDir = "$rootDir/submodule-1" as File
+project(':multi-module-submodule-2').projectDir = "$rootDir/submodule-2" as File

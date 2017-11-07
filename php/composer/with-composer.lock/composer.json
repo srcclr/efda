@@ -1,0 +1,13 @@
+{
+    "name": "edfa-composer-with-composer-lock",
+    "description": "An example project to test dependency analysis tools with different dependencies specified in composer composer.json.",
+    "type": "project",
+    "require": {
+      "moodle/moodle": "2.6.2",
+      "appserver-io/http": "1.1.6",
+      "drupal/core": "8.3.6"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "5.0.10"
+    }
+}

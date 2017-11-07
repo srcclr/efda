@@ -1,0 +1,7 @@
+apply plugin: 'application'
+
+mainClassName = "org.continuous_security.Main"
+
+run {
+    args "HelloWorld"
+}
