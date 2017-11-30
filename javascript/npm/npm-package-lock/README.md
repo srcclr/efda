@@ -15,7 +15,7 @@ This project is an example of a JavaScript project with a package-lock.json to l
 - concat-map@0.0.1
 
 Total number of dependencies:
-- 10 direct dependencies
+- 10 direct dependencies (7 of these direct dependencies are also transitives)
 
 Vulnerabilities:
 - 2 vulnerabilities
