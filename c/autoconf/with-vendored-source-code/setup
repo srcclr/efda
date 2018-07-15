@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-mkdir -p build \
-&& libtoolize \
+libtoolize \
 && aclocal \
-&& automake --add-missing \
-&& autoreconf
+&& autoreconf -fvi
 
 ./configure
 make
