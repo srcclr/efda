@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+mkdir -p build \
+&& libtoolize \
+&& aclocal \
+&& automake --add-missing \
+&& autoreconf
+
+./configure
+make
+
+read -n 1 -s -r -p "Press any key to continue"
+echo -e ""
+

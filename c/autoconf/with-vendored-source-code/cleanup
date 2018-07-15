@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+if [ -e autom4te.cache ]
+then
+    rm autom4te.cache -rf
+else
+    echo "1 folder removed"
+fi
+
+rm *.m4
+rm compile
+rm config.guess
+rm config.log
+rm config.status
+rm config.sub
+rm configure
+rm depcomp
+rm install-sh
+rm libtool
+rm ltmain.sh
+rm main
+rm Makefile
+rm Makefile.in
+rm missing
+rm lib/sqlite/sqlite3
+rm lib/sqlite/config.log
+rm lib/sqlite/autom4te.cache -rf
+
