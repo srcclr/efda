@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+libtoolize \
+&& aclocal \
+&& autoreconf -fvi
+
+./configure
+make
+
+read -n 1 -s -r -p "Press any key to continue"
+echo -e ""
+
