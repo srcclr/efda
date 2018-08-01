@@ -21,7 +21,7 @@ The jar used in this project is:
 Total number of dependencies:
 - 1 direct dependency.
 - 0 transitive dependencies (everything is in the fat jar).
-- 3 vulnerabilities.
+- 4 vulnerabilities.
 
 #### Vulnerable Call Chain
 Main.java has a method call at line 38 that leads to a vulnerability. The line calls `MyDecoder.decode()`, which will call `DnsResponseDecoder.decode()`, which eventually calls a private vulnerable method.
