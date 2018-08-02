@@ -22,7 +22,7 @@ Projects implemented in:
  - Objective-C
  - PHP
  - Scala
- - C
+ - C/C++
  - C#
 
 An [EFDA Spreadsheet](https://docs.google.com/spreadsheets/d/1rAmOxEQDw1SpKetbrGOqNU5YmfnRh_aFqrizU8D2MKk) that allows you to track the languages/package managers/features supported by the dependency analysis tool of your choice, customize the importance of each feature, and compute a score for the tool.
