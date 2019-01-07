@@ -140,6 +140,17 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:98b8ffea3fbb87f7bbaabca43d62f3a3623e6e037f1fe5b88a5895d742aee502"
+  name = "github.com/srcclr/efda"
+  packages = [
+    "golang/dep/dep-override/sub",
+    "golang/dep/dep-override/sub2",
+  ]
+  pruneopts = ""
+  revision = "03020952c95ae0fccc3eff6899071aeea0f95f96"
+
+[[projects]]
+  branch = "master"
   digest = "1:fb9c60108aa8a0c8571f568c05fe8f3be347cf30b6b05d86beda7d7223ff88c8"
   name = "golang.org/x/sys"
   packages = ["unix"]
@@ -155,6 +166,8 @@
     "github.com/russellhaering/gosaml2",
     "github.com/simeji/jid",
     "github.com/square/go-jose",
+    "github.com/srcclr/efda/golang/dep/dep-override/sub",
+    "github.com/srcclr/efda/golang/dep/dep-override/sub2",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
