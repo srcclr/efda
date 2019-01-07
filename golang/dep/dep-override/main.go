@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 import "github.com/google/go-querystring/query"
-import "github.com/srcclr/example-go-golangdep/sub"
-import "github.com/srcclr/example-go-golangdep/sub2"
+import "github.com/srcclr/efda/golang/dep/dep-override/sub"
+import "github.com/srcclr/efda/golang/dep/dep-override/sub2"
 import "github.com/russellhaering/gosaml2"
 
 type Options struct {
