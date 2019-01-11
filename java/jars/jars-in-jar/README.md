@@ -1,4 +1,4 @@
-# War Example
+# Jars in Jar Example
 
 This project includes a single Jar file for testing purposes.
 
