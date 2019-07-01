@@ -1,10 +1,16 @@
 package org.continuous_security;
 
 import org.apache.commons.fileupload.MultipartStream;
+import java.io.ByteArrayInputStream;
 
 public class Main {
 
-  public static void main(String[] args) {
-    System.out.println("Gradle multi-module submodule-2 completed.");
+  private static void filterXMLSignature() throws Exception {
+    byte[] bytes = new byte[256];
+    new MultipartStream(new ByteArrayInputStream(bytes), bytes);
+  }
+
+  public static void main(String[] args) throws Exception {
+    filterXMLSignature();
   }
 }

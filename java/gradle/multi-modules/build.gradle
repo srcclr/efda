@@ -14,11 +14,7 @@ subprojects {
     maven { url "http://repo.maven.apache.org/maven2" }
   }
 
-
   dependencies {
-    compile group: 'org.apache.sling', name: 'org.apache.sling.engine', version:'2.0.4-incubator'
     compile group: 'org.mindrot', name: 'jbcrypt', version:'0.3m'
   }
-
-
 }
