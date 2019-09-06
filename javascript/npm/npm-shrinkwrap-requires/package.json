@@ -1,0 +1,19 @@
+{
+  "name": "efda-npm-shrinkwrap",
+  "version": "0.0.1",
+  "private": true,
+  "author": "continuous-security <contact@continuous-security.org>",
+  "description": "An example project to test dependency analysis tools' support for npm-shrinkwrap.json.",
+  "dependencies": {
+    "hawk": "<3.0.0",
+    "boom": ">=2.0.0 <3.0.0",
+    "cryptiles": ">=2.0.0 <3.0.0",
+    "hoek": ">=2.0.0 <3.0.0",
+    "sntp": ">=1.0.0 <2.0.0",
+    "minimatch": ">=2.0.0 <2.1.0",
+    "brace-expansion": ">=1.0.0 <2.0.0",
+    "balanced-match": ">=0.4.1 <0.5.0",
+    "concat-map": "0.0.1",
+    "inflight": "1.0.6"
+  }
+}
