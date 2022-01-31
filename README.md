@@ -29,7 +29,7 @@ An [EFDA Spreadsheet](https://docs.google.com/spreadsheets/d/1rAmOxEQDw1SpKetbrG
 
 ![EFDA Spreadsheet screenshot](efda_ss.png)
 
-#### Frequently Asked Questions
+#### Frequently Asked Questions 
 
 ###### I don't see any project implemented on the build system of my choice. Can I contribute?
 Yes of course! If you do not see the programming language/build system or even a particular tricky setup of a build system of your choice, feel free to send a pull request to us.
